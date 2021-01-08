@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "pretty": true,
+      "sourceMap": true,
+      "module": "commonjs",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "paths": {
+        "@/*": ["./src/*"],
+      }
+    },
+    "exclude": [
+      "node_modules",
+      "test"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ]
+  }
