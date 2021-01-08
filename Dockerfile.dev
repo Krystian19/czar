@@ -1,0 +1,9 @@
+FROM node:15.5.1-alpine3.11
+LABEL Jan Guzman <janfrancisco19@gmail.com>
+
+WORKDIR /app
+COPY . /app
+
+RUN yarn install
+
+CMD yarn start
