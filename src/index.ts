@@ -10,7 +10,7 @@ dotenv.config({
 });
 
 const client = new discord.Client();
-const prefix = '!';
+const PREFIX = '!';
 
 const commandsDict: { [command: string]: Command} = {};
 for (const cmd of Commands) {
@@ -18,18 +18,18 @@ for (const cmd of Commands) {
 }
 
 client.on('ready', () => {
-  console.log('Client connected');
+  console.log(`${client.user.username} ready!`);
+  client.user.setActivity(`${PREFIX}help for help`);
 });
 
-client.on('disconnect', () => {
-  console.log('Client is disconnected');
-});
+client.on('warn', (info) => console.log(info));
+client.on('error', console.error);
 
 client.on('message', (msg) => {
   if (msg.author.bot) return;
-  if (!msg.content.startsWith(prefix)) return;
+  if (!msg.content.startsWith(PREFIX)) return;
 
-  const args = msg.content.slice(prefix.length).split(spaceRegex);
+  const args = msg.content.slice(PREFIX.length).split(spaceRegex);
   const commandName = args.shift().toLowerCase();
 
   const execCommand = commandsDict[commandName];
@@ -39,7 +39,7 @@ client.on('message', (msg) => {
   }
 
   try {
-    execCommand.execute(msg);
+    execCommand.execute(msg, client);
   } catch (err) {
     console.error(err);
   }

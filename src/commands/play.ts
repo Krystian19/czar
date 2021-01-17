@@ -1,10 +1,17 @@
-import { Command } from '../types';
+import { Command, spaceRegex } from '../types';
 
 const playCMD: Command = {
   name: 'play',
   description: 'Play',
-  execute: async (msg): Promise<void> => {
-    msg.channel.send('Play command works well');
+  execute: async (msg, client): Promise<void> => {
+    const { content: message } = msg;
+    const args = message.split(spaceRegex);
+    args.shift();
+
+    const songQuery = args.join(' ');
+    msg.channel.send(`Playing "${songQuery}"`);
+    client.user.setActivity(`"${songQuery}"`, { type: 'LISTENING' });
+
     return Promise.resolve();
   },
 };
