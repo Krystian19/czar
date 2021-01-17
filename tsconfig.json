@@ -2,11 +2,11 @@
     "compilerOptions": {
       "pretty": true,
       "sourceMap": true,
-      "module": "commonjs",
+      "module": "CommonJS",
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       "paths": {
-        "@/*": ["./src/*"],
+        "@root/*": ["./src/*"],
       }
     },
     "exclude": [
