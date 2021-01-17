@@ -1,4 +1,4 @@
-import { Command } from '../types';
+import { Command } from '../common';
 import PlayCommand from './play';
 
 const cmds: Command[] = [

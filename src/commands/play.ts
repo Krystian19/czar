@@ -1,4 +1,4 @@
-import { Command, spaceRegex } from '../types';
+import { Command, spaceRegex } from '../common';
 
 const playCMD: Command = {
   name: 'play',

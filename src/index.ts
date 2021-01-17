@@ -3,7 +3,7 @@ import discord from 'discord.js';
 import dotenv from 'dotenv';
 
 import Commands from './commands';
-import { Command, spaceRegex } from './types';
+import { Command, spaceRegex } from './common';
 
 dotenv.config({
   path: path.resolve(__dirname, '..', '.env'),
