@@ -6,4 +6,15 @@ export type Command = {
   execute: (msg: discord.Message, client: discord.Client) => Promise<void>;
 };
 
+export type Song = {
+  title: string;
+  url: string;
+  duration: number;
+};
+
 export const spaceRegex = / +/;
+
+export const testYoutubeUrl = (url: string): boolean => {
+  const UrlPattern = /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
+  return UrlPattern.test(url);
+};
