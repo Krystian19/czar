@@ -1,4 +1,5 @@
 import discord from 'discord.js';
+import path from 'path';
 
 import Commands from '../commands';
 import { Command, spaceRegex } from '../common';
@@ -14,6 +15,11 @@ for (const cmd of Commands) {
 client.on('ready', () => {
   console.log('Client ready');
   client.user.setActivity(`Type ${PREFIX}help for help`);
+
+  // Can't change avatar very often, be careful
+  // client.user
+  //   .setAvatar(path.resolve(__dirname, 'pp.png'))
+  //   .catch(console.error);
 });
 
 client.on('warn', (info) => console.log(info));
