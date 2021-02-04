@@ -1,5 +1,7 @@
 ## czar
 
+![build](https://github.com/Krystian19/czar/workflows/.github/workflows/ci.yml/badge.svg)
+
 Discord bot
 
 ```sh
