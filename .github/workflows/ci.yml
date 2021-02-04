@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: alpine-3.11.7
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
