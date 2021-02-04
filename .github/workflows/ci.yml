@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: alpine-3.11
+    runs-on: alpine-3.11.7
 
     strategy:
       matrix:
