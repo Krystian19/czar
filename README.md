@@ -1,6 +1,6 @@
 ## czar
 
-![build](https://github.com/Krystian19/czar/workflows/build/badge.svg)
+[![Build Status](https://github.com/Krystian19/czar/workflows/build/badge.svg)](https://github.com/Krystian19/czar/actions)
 
 Discord bot
 
