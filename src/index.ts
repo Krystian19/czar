@@ -5,7 +5,7 @@ import client from './client';
 
 dotenv.config({
   path: path.resolve(__dirname, '..', '.env'),
-});
+})
 
 client.login(process.env.DISCORD_API_TOKEN)
   .catch((err) => {
