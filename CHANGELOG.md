@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/Krystian19/czar/compare/v1.1.0...v1.1.1) (2021-02-06)
+
+
+### Bug Fixes
+
+* avoid CI running twice on release ([#11](https://github.com/Krystian19/czar/issues/11)) ([8e6d567](https://github.com/Krystian19/czar/commit/8e6d5674f3d524d59b8cb9fd78d48ef2e08842ae))
+* change release to run on merge ([#10](https://github.com/Krystian19/czar/issues/10)) ([ca9c3a6](https://github.com/Krystian19/czar/commit/ca9c3a6a284c4a0de4fce146fa440605e3df735d))
+
 # [1.1.0](https://github.com/Krystian19/czar/compare/v1.0.0...v1.1.0) (2021-02-06)
 
 
