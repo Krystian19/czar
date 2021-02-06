@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Krystian19/czar/compare/v1.2.1...v1.3.0) (2021-02-06)
+
+
+### Features
+
+* semantic release github support ([#14](https://github.com/Krystian19/czar/issues/14)) ([b864023](https://github.com/Krystian19/czar/commit/b86402352193889311c65569d1377ddc42832802))
+
 ## [1.2.1](https://github.com/Krystian19/czar/compare/v1.2.0...v1.2.1) (2021-02-06)
 
 
