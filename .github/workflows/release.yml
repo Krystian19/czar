@@ -1,13 +1,14 @@
 name: release
 
 on:
-  merge:
+  push:
     branches: [ main ]
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    if: "!contains(github.event.commits[0].message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v2
         with:
@@ -16,7 +17,11 @@ jobs:
         with:
           node-version: "15.x"
       - run: yarn install
-      - run: yarn build
+      - uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       - run: yarn release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
