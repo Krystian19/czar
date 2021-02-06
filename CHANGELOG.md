@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/Krystian19/czar/compare/v1.0.0...v1.1.0) (2021-02-06)
+
+
+### Bug Fixes
+
+* fix release file format error ([a20cdb1](https://github.com/Krystian19/czar/commit/a20cdb13d4c3fa74e61f320801212022479b5d74))
+
+
+### Features
+
+* move semantic command to yarn script ([#9](https://github.com/Krystian19/czar/issues/9)) ([7f1b79b](https://github.com/Krystian19/czar/commit/7f1b79bb5b976b22b6dd47fe7a5ffe1e8f8f5477))
+
 # 1.0.0 (2021-02-06)
 
 
