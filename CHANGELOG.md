@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Krystian19/czar/compare/v1.2.0...v1.2.1) (2021-02-06)
+
+
+### Bug Fixes
+
+* yarn install is was not  being cached ([#13](https://github.com/Krystian19/czar/issues/13)) ([21ebe42](https://github.com/Krystian19/czar/commit/21ebe42a5cd84ac70f6085236a0a27e64c20e160))
+
 # [1.2.0](https://github.com/Krystian19/czar/compare/v1.1.1...v1.2.0) (2021-02-06)
 
 
