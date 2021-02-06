@@ -23,7 +23,7 @@ And build your image and run container:
 docker build -t krystian19/czar -f Dockerfile.dev .
 
 # Run on a container
-docker run -ti -d --name=czar krystian19/czar
+docker run -ti -d --env-file=.env --name=czar krystian19/czar
 ```
 
 And voilà, the bot should be up and running.
