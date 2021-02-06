@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 
 import client from './client';
 
+// Load env vars before the client's execution
 dotenv.config({
   path: path.resolve(__dirname, '..', '.env'),
 });
