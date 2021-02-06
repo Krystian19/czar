@@ -7,7 +7,7 @@
     "watch": "nodemon -exec \"yarn start\" ",
     "lint": "eslint . --ext .ts --quiet --cache --cache-location \".eslintcache/\"",
     "build": "tsc --build tsconfig.json",
-    "release": "semantic-release --branches main"
+    "release": "semantic-release"
   },
   "dependencies": {
     "discord.js": "^12.5.1",
