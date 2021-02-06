@@ -1,12 +1,13 @@
 {
   "name": "czar",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "scripts": {
     "start": "ts-node ./src",
     "watch": "nodemon -exec \"yarn start\" ",
     "lint": "eslint . --ext .ts --quiet --cache --cache-location \".eslintcache/\"",
-    "build": "tsc --build tsconfig.json"
+    "build": "tsc --build tsconfig.json",
+    "release": "semantic-release"
   },
   "dependencies": {
     "discord.js": "^12.5.1",
