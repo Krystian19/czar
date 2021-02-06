@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Krystian19/czar/compare/v1.1.1...v1.2.0) (2021-02-06)
+
+
+### Features
+
+* docker image opus support ([#12](https://github.com/Krystian19/czar/issues/12)) ([9599280](https://github.com/Krystian19/czar/commit/9599280044aceeaf0ef55da94e6b381463d5d507))
+
 ## [1.1.1](https://github.com/Krystian19/czar/compare/v1.1.0...v1.1.1) (2021-02-06)
 
 
