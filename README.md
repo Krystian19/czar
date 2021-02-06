@@ -7,7 +7,7 @@ Czar is a Discord DJ Bot tailored to your gaming needs. Connects to the Youtube 
 ## Requirements
 ```sh
 docker -v
-  Docker version 18.03.0-ce # Or later
+  Docker version 18.03.0-ce # Or later.
 ```
 
 ## Getting started
