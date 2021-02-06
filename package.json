@@ -6,8 +6,7 @@
     "start": "ts-node ./src",
     "watch": "nodemon -exec \"yarn start\" ",
     "lint": "eslint . --ext .ts --quiet --cache --cache-location \".eslintcache/\"",
-    "build": "tsc --build tsconfig.json",
-    "release": "semantic-release"
+    "build": "tsc --build tsconfig.json"
   },
   "dependencies": {
     "discord.js": "^12.5.1",
