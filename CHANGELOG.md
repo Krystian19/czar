@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Krystian19/czar/compare/v1.4.0...v1.5.0) (2021-02-07)
+
+
+### Features
+
+* author command ([#16](https://github.com/Krystian19/czar/issues/16)) ([e8e7e3d](https://github.com/Krystian19/czar/commit/e8e7e3d935ebff085872eb83ac804d2680676d76))
+
 # [1.4.0](https://github.com/Krystian19/czar/compare/v1.3.0...v1.4.0) (2021-02-07)
 
 
