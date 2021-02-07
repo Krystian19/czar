@@ -8,4 +8,13 @@ RUN pip3 install --no-cache --upgrade pip setuptools
 RUN yarn install
 RUN yarn build
 
-CMD node ./build
+FROM node:15.5.1-alpine3.11
+LABEL Jan Guzman <janfrancisco19@gmail.com>
+
+ENV NODE_ENV="production"
+
+WORKDIR /app
+COPY --from=builder /app/build /app/build
+COPY --from=builder /app/node_modules /app/node_modules
+
+CMD node build
