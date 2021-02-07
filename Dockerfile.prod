@@ -1,0 +1,11 @@
+FROM node:15.5.1-alpine3.11 AS builder
+
+WORKDIR /app
+COPY . /app
+
+RUN apk add --update --no-cache build-base make python3 && ln -sf python3 /usr/bin/python
+RUN pip3 install --no-cache --upgrade pip setuptools
+RUN yarn install
+RUN yarn build
+
+CMD node ./build
