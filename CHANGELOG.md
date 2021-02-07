@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Krystian19/czar/compare/v1.5.0...v1.6.0) (2021-02-07)
+
+
+### Features
+
+* production dockerfile ([#17](https://github.com/Krystian19/czar/issues/17)) ([0b874bc](https://github.com/Krystian19/czar/commit/0b874bcb6428cdedf29f6b8138f13e15b94dd4b2))
+
 # [1.5.0](https://github.com/Krystian19/czar/compare/v1.4.0...v1.5.0) (2021-02-07)
 
 
