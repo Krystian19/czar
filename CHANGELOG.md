@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/Krystian19/czar/compare/v1.6.0...v1.6.1) (2021-02-07)
+
+
+### Bug Fixes
+
+* lighter prod docker image ([#18](https://github.com/Krystian19/czar/issues/18)) ([49f9b1b](https://github.com/Krystian19/czar/commit/49f9b1bfab2f47aeb990e111d856e8c207bdf0d4))
+
 # [1.6.0](https://github.com/Krystian19/czar/compare/v1.5.0...v1.6.0) (2021-02-07)
 
 
