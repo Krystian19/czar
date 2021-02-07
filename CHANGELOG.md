@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Krystian19/czar/compare/v1.3.0...v1.4.0) (2021-02-07)
+
+
+### Features
+
+* stop command ([#15](https://github.com/Krystian19/czar/issues/15)) ([91ddb85](https://github.com/Krystian19/czar/commit/91ddb8571c7fc716a9db15b1ae91d3753573e9df))
+
 # [1.3.0](https://github.com/Krystian19/czar/compare/v1.2.1...v1.3.0) (2021-02-06)
 
 
