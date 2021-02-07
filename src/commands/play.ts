@@ -75,7 +75,7 @@ const playCMD: Command = {
       return Promise.resolve();
     }
 
-    msg.channel.send(`Playing "${song.title}"`).catch(console.error);
+    msg.channel.send(`Playing "${song.title}" ${song.url}`).catch(console.error);
     client.user.setActivity(
       `"${song.title}"`,
       { type: 'LISTENING' },
@@ -91,7 +91,7 @@ const playCMD: Command = {
       await play(song, botConnection);
     } catch (err) {
       msg.reply(err.message);
-      await channel.leave();
+      channel.leave();
       msg.channel.send('Could not join channel').catch(console.error);
       return Promise.reject(err);
     }
