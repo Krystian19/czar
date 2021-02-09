@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/Krystian19/czar/compare/v1.7.1...v1.7.2) (2021-02-09)
+
+
+### Bug Fixes
+
+* change status properly when music stops ([#21](https://github.com/Krystian19/czar/issues/21)) ([154e9cf](https://github.com/Krystian19/czar/commit/154e9cfee0fae435e41d8c953e7eb2b984b9e529))
+
 ## [1.7.1](https://github.com/Krystian19/czar/compare/v1.7.0...v1.7.1) (2021-02-09)
 
 
