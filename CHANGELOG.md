@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/Krystian19/czar/compare/v1.7.0...v1.7.1) (2021-02-09)
+
+
+### Bug Fixes
+
+* wrong workflow name ([#20](https://github.com/Krystian19/czar/issues/20)) ([8a34db1](https://github.com/Krystian19/czar/commit/8a34db1cfa6ec301d6063dd696a78a8f734642c5))
+
 # [1.7.0](https://github.com/Krystian19/czar/compare/v1.6.1...v1.7.0) (2021-02-09)
 
 
