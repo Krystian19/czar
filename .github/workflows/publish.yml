@@ -10,7 +10,7 @@ on:
 jobs:
   publish:
     name: Publish
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-20.04
     steps:
       - name: Get the version
         id: get_version
