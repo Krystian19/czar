@@ -2,10 +2,14 @@ import discord from 'discord.js';
 // import path from 'path';
 
 import Commands from '../commands';
-import { Command, spaceRegex } from '../common';
+import {
+  Command,
+  spaceRegex,
+  CMD_PREFIX,
+  setClientActivity,
+} from '../common';
 
 const client = new discord.Client();
-const PREFIX = '!';
 
 const commandsDict: { [command: string]: Command } = {};
 for (const cmd of Commands) {
@@ -14,9 +18,9 @@ for (const cmd of Commands) {
 
 client.on('ready', () => {
   console.log('Client ready');
-  client.user.setActivity(`Type ${PREFIX}help for help`);
+  setClientActivity(client).catch(console.error);
 
-  // Can't change of avatar very often, be careful
+  // Can't change of avatar very often without being throttled, be careful.
   // client.user
   //   .setAvatar(path.resolve(__dirname, 'pp.png'))
   //   .catch(console.error);
@@ -27,9 +31,9 @@ client.on('error', console.error);
 
 client.on('message', (msg) => {
   if (msg.author.bot) return;
-  if (!msg.content.startsWith(PREFIX)) return;
+  if (!msg.content.startsWith(CMD_PREFIX)) return;
 
-  const args = msg.content.slice(PREFIX.length).split(spaceRegex);
+  const args = msg.content.slice(CMD_PREFIX.length).split(spaceRegex);
   const commandName = args.shift().toLowerCase();
 
   const execCommand = commandsDict[commandName];
