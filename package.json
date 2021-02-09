@@ -20,7 +20,7 @@
     "ytdl-core-discord": "^1.2.5"
   },
   "devDependencies": {
-    "@discordjs/opus": "^0.3.3",
+    "@discordjs/opus": "^0.4.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@types/node": "^14.14.20",

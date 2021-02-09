@@ -20,6 +20,7 @@ jobs:
       with:
         path: |
           **/node_modules
+          **/.eslintcache
         key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
 
     - run: yarn install
