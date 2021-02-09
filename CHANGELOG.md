@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Krystian19/czar/compare/v1.6.1...v1.7.0) (2021-02-09)
+
+
+### Features
+
+* extract correct tag from publish workflow ([#19](https://github.com/Krystian19/czar/issues/19)) ([a269b8a](https://github.com/Krystian19/czar/commit/a269b8a7904f163bc32fdebf5c8114ecaaaeb676))
+
 ## [1.6.1](https://github.com/Krystian19/czar/compare/v1.6.0...v1.6.1) (2021-02-07)
 
 
