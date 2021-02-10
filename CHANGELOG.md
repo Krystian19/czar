@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/Krystian19/czar/compare/v1.8.0...v1.8.1) (2021-02-10)
+
+
+### Bug Fixes
+
+* publish workflow ([#25](https://github.com/Krystian19/czar/issues/25)) ([8cd5bc2](https://github.com/Krystian19/czar/commit/8cd5bc24528d7faf83cf5a7650c4a41bfd963c3c))
+
 # [1.8.0](https://github.com/Krystian19/czar/compare/v1.7.2...v1.8.0) (2021-02-10)
 
 
