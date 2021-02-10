@@ -6,7 +6,7 @@ import {
   Command,
   spaceRegex,
   CMD_PREFIX,
-  setClientActivity,
+  resetClientActivity,
 } from '../common';
 
 const client = new discord.Client();
@@ -18,7 +18,7 @@ for (const cmd of Commands) {
 
 client.on('ready', () => {
   console.log('Client ready');
-  setClientActivity(client).catch(console.error);
+  resetClientActivity(client).catch(console.error);
 
   // Can't change of avatar very often without being throttled, be careful.
   // client.user
