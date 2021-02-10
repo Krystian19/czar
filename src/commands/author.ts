@@ -6,7 +6,9 @@ const authorCMD: Command = {
   execute: async (msg): Promise<void> => {
     const { channel } = msg;
 
-    channel.send('Jan Guzman - https://github.com/Krystian19').catch(console.error);
+    channel
+      .send('Jan Guzman (Krystian19) - https://github.com/Krystian19')
+      .catch(console.error);
   },
 };
 
