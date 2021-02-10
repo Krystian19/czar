@@ -1,4 +1,4 @@
-import { Command, setClientActivity } from '../common';
+import { Command, resetClientActivity } from '../common';
 
 const stopCMD: Command = {
   name: 'stop',
@@ -8,7 +8,7 @@ const stopCMD: Command = {
     channel.leave();
 
     try {
-      await setClientActivity(client);
+      await resetClientActivity(client);
     } catch (err) {
       return Promise.reject(err);
     }
