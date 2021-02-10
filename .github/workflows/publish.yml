@@ -12,6 +12,9 @@ jobs:
     name: Publish
     runs-on: Ubuntu-20.04
     steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - name: Extract version tag
         id: get_version
         run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
