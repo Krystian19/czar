@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/Krystian19/czar/compare/v1.8.1...v1.8.2) (2021-02-10)
+
+
+### Bug Fixes
+
+* readable reset bot's state ([#26](https://github.com/Krystian19/czar/issues/26)) ([aacd833](https://github.com/Krystian19/czar/commit/aacd833e3826242563e29cce5faf8299fbd96a26))
+
 ## [1.8.1](https://github.com/Krystian19/czar/compare/v1.8.0...v1.8.1) (2021-02-10)
 
 
