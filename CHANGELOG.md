@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/Krystian19/czar/compare/v1.7.2...v1.8.0) (2021-02-10)
+
+
+### Features
+
+* first proper docker image push ([#24](https://github.com/Krystian19/czar/issues/24)) ([65508b5](https://github.com/Krystian19/czar/commit/65508b5b5520959e5aa26a94e7faa5f952c75538))
+
 ## [1.7.2](https://github.com/Krystian19/czar/compare/v1.7.1...v1.7.2) (2021-02-09)
 
 
