@@ -7,23 +7,21 @@ Czar is a Discord DJ Bot tailored to your gaming needs. Connects to the Youtube 
 ## Requirements
 ```sh
 docker -v
-  Docker version 18.03.0-ce # Or later.
+  Docker version 20.10.2 # Or later
 ```
 
 ## Getting started
 
-Make your local copy of the env file, and set your API keys:
+Authorize czar with access to your designated discord server:
+
+[Bot Authorization Link](https://discordapp.com/oauth2/authorize?client_id=797110597565153280&scope=bot)
+
+And run the container, with the appropiate tokens:
 ```sh
-copy .env_example .env
+docker run -ti -d \
+  -e DISCORD_API_TOKEN=<YOUR_DISCORD_TOKEN> \
+  -e YOUTUBE_API_KEY=<YOUR_API_KEY> \
+  --name=czar krystian19/czar:latest
 ```
 
-And build your image and run container:
-```sh
-# Build your image
-docker build -t krystian19/czar -f Dockerfile.dev .
-
-# Run on a container
-docker run -ti -d --env-file=.env --name=czar krystian19/czar
-```
-
-And voilà, the bot should be up and running.
+And voilà, the bot should be up and running, in your server of choice.
