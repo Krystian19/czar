@@ -12,7 +12,7 @@ import play from '../include/play';
 
 const playCMD: Command = {
   name: 'play',
-  description: 'Play',
+  description: 'Plays a song. Accepts text and youtube links',
   execute: async (msg, client): Promise<void> => {
     const { content: messageContent } = msg;
     const { channel } = msg.member.voice;

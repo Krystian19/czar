@@ -2,7 +2,7 @@ import { Command } from '../common';
 
 const authorCMD: Command = {
   name: 'author',
-  description: 'Author',
+  description: 'Shows who you should give thanks to 😉',
   execute: async (msg): Promise<void> => {
     const { channel } = msg;
 
