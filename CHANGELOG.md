@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/Krystian19/czar/compare/v1.8.2...v1.8.3) (2021-02-12)
+
+
+### Bug Fixes
+
+* bot status reset ([#28](https://github.com/Krystian19/czar/issues/28)) ([83aca18](https://github.com/Krystian19/czar/commit/83aca18350d011626f2aa5559eae0b006b81f218))
+
 ## [1.8.2](https://github.com/Krystian19/czar/compare/v1.8.1...v1.8.2) (2021-02-10)
 
 
