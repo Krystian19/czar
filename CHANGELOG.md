@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/Krystian19/czar/compare/v1.10.0...v1.10.1) (2021-02-12)
+
+
+### Bug Fixes
+
+* leave channel when youtube query fails ([#32](https://github.com/Krystian19/czar/issues/32)) ([ca0cb42](https://github.com/Krystian19/czar/commit/ca0cb42a25988bcae8a0554ef2add5c7a7892e27))
+
 # [1.10.0](https://github.com/Krystian19/czar/compare/v1.9.1...v1.10.0) (2021-02-12)
 
 
