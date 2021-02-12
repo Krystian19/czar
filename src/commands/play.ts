@@ -2,7 +2,11 @@ import ytdl from 'ytdl-core';
 import YoutubeAPI from 'simple-youtube-api';
 
 import {
-  Command, spaceRegex, testYoutubeUrl, Song,
+  Command,
+  spaceRegex,
+  testYoutubeUrl,
+  Song,
+  resetClientActivity,
 } from '../common';
 import play from '../include/play';
 
@@ -89,6 +93,9 @@ const playCMD: Command = {
       await botConnection.voice.setSelfDeaf(true);
 
       await play(song, botConnection);
+
+      // Reset bot activity, after song is finished playing
+      await resetClientActivity(client);
     } catch (err) {
       msg.reply(err.message);
       channel.leave();
