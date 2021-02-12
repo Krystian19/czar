@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/Krystian19/czar/compare/v1.9.0...v1.9.1) (2021-02-12)
+
+
+### Bug Fixes
+
+* add proper publish creds ([#30](https://github.com/Krystian19/czar/issues/30)) ([049b1ff](https://github.com/Krystian19/czar/commit/049b1ff0b12b83ff623879f48885eac0957569e1))
+
 # [1.9.0](https://github.com/Krystian19/czar/compare/v1.8.3...v1.9.0) (2021-02-12)
 
 
