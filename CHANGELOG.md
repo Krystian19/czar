@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/Krystian19/czar/compare/v1.9.1...v1.10.0) (2021-02-12)
+
+
+### Features
+
+* help commandg ([#31](https://github.com/Krystian19/czar/issues/31)) ([1d0e52d](https://github.com/Krystian19/czar/commit/1d0e52d7cfa076fc6276db134b2af7c6c477d969))
+
 ## [1.9.1](https://github.com/Krystian19/czar/compare/v1.9.0...v1.9.1) (2021-02-12)
 
 
