@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/Krystian19/czar/compare/v1.8.3...v1.9.0) (2021-02-12)
+
+
+### Features
+
+* update docker hub's description on publish ([#29](https://github.com/Krystian19/czar/issues/29)) ([3cb8f02](https://github.com/Krystian19/czar/commit/3cb8f023693d0e39aadfd22fafcd56ab3c9d6e8e))
+
 ## [1.8.3](https://github.com/Krystian19/czar/compare/v1.8.2...v1.8.3) (2021-02-12)
 
 
