@@ -97,9 +97,8 @@ const playCMD: Command = {
       // Reset bot activity, after song is finished playing
       await resetClientActivity(client);
     } catch (err) {
-      msg.reply(err.message);
+      msg.reply(err.message).catch(console.error);
       channel.leave();
-      msg.channel.send('Could not join channel').catch(console.error);
       return Promise.reject(err);
     }
 
