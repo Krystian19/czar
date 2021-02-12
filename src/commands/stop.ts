@@ -2,7 +2,7 @@ import { Command, resetClientActivity } from '../common';
 
 const stopCMD: Command = {
   name: 'stop',
-  description: 'Stop',
+  description: 'Stops playing the current song',
   execute: async (msg, client): Promise<void> => {
     const { channel } = msg.member.voice;
     channel.leave();
