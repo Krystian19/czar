@@ -23,7 +23,7 @@ export const testYoutubeUrl = (url: string): boolean => {
 
 export const resetClientActivity = (
   client: discord.Client,
-): Promise<discord.Presence> => client.user.setActivity(
-  `Music. Type ${CMD_PREFIX}help for help`,
-  { type: 'PLAYING' },
-);
+): Promise<discord.Presence> =>
+  client.user.setActivity(`Music. Type ${CMD_PREFIX}help for help`, {
+    type: 'PLAYING',
+  });
