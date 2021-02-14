@@ -8,8 +8,7 @@ dotenv.config({
   path: path.resolve(__dirname, '..', '.env'),
 });
 
-client.login(process.env.DISCORD_API_TOKEN)
-  .catch((err) => {
-    console.log(err);
-    process.exit(1);
-  });
+client.login(process.env.DISCORD_API_TOKEN).catch((err) => {
+  console.log(err);
+  process.exit(1);
+});

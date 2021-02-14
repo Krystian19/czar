@@ -4,11 +4,6 @@ import StopCommand from './stop';
 import AuthorCommand from './author';
 import HelpCommand from './help';
 
-const cmds: Command[] = [
-  PlayCommand,
-  StopCommand,
-  AuthorCommand,
-  HelpCommand,
-];
+const cmds: Command[] = [PlayCommand, StopCommand, AuthorCommand, HelpCommand];
 
 export default cmds;

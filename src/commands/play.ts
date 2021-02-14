@@ -57,7 +57,9 @@ const playCMD: Command = {
     } else {
       try {
         const youtube = new YoutubeAPI(process.env.YOUTUBE_API_KEY);
-        const results = await youtube.searchVideos(songQuery, 1, { part: 'snippet' });
+        const results = await youtube.searchVideos(songQuery, 1, {
+          part: 'snippet',
+        });
 
         if (results.length) {
           const songInfo = await ytdl.getInfo(results[0].url);
@@ -75,15 +77,17 @@ const playCMD: Command = {
     }
 
     if (!song) {
-      msg.channel.send('Could not resolve to youtube video').catch(console.error);
+      msg.channel
+        .send('Could not resolve to youtube video')
+        .catch(console.error);
       return Promise.resolve();
     }
 
-    msg.channel.send(`Playing "${song.title}" ${song.url}`).catch(console.error);
-    client.user.setActivity(
-      `"${song.title}"`,
-      { type: 'LISTENING' },
-    );
+    msg.channel
+      .send(`Playing "${song.title}" ${song.url}`)
+      .catch(console.error);
+
+    client.user.setActivity(`"${song.title}"`, { type: 'LISTENING' });
 
     console.log('===========================================================');
     console.log(song);
