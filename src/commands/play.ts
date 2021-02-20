@@ -1,12 +1,12 @@
-import ytdl from 'ytdl-core';
 import YoutubeAPI from 'simple-youtube-api';
+import ytdl from 'ytdl-core';
 
 import {
   Command,
+  resetClientActivity,
+  Song,
   spaceRegex,
   testYoutubeUrl,
-  Song,
-  resetClientActivity,
 } from '../common';
 import play from '../include/play';
 

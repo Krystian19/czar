@@ -1,12 +1,15 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['@typescript-eslint', 'prettier', 'simple-import-sort'],
   extends: [
     'airbnb-typescript/base',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
+    'prettier/react',
+    'prettier/prettier',
+    'prettier/@typescript-eslint',
   ],
   rules: {
     'no-console': 0,
@@ -24,16 +27,11 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 0,
     '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/explicit-function-return-type': ['error'],
-    'import/order': [
-      'error',
-      {
-        'newlines-between': 'always',
-        groups: [
-          ['builtin', 'external', 'internal'],
-          ['parent', 'sibling'],
-          'index',
-        ],
-      },
-    ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'sort-imports': 'off',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
   },
 };
