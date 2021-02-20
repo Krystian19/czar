@@ -1,5 +1,4 @@
-import { Command, CMD_PREFIX } from '../common';
-
+import { CMD_PREFIX, Command } from '../common';
 import commands from './index';
 
 const helpCMD: Command = {

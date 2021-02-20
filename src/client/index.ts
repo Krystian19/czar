@@ -1,12 +1,12 @@
 import discord from 'discord.js';
-// import path from 'path';
 
+// import path from 'path';
 import Commands from '../commands';
 import {
-  Command,
-  spaceRegex,
   CMD_PREFIX,
+  Command,
   resetClientActivity,
+  spaceRegex,
 } from '../common';
 
 const client = new discord.Client();
