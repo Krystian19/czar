@@ -30,4 +30,4 @@ And voilà, the bot should be up and running, in your discord server/s of choice
 
 ## License
 
-Project is released under the terms of the MIT License.
+Project is released under the MIT License.
